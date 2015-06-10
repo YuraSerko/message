@@ -1,0 +1,104 @@
+/* Styles */
+
+/*header*/
+
+.block_header{
+	/*border:1px solid red; */
+	font-family: "Open Sans",sans-serif;
+	font-size: 20px;
+	height:48px;
+	background:rgb(196, 196, 196);
+	padding-top: 20px;
+	margin-bottom:20px;
+	padding-left:5px;
+}
+
+.block_header a{
+	text-decoration:none;
+	color:rgb(60, 111, 234);
+}
+
+.block_header a:hover{
+	text-decoration:underline;
+}
+
+#href_add_message{
+	margin-left:100px;
+}
+
+#href_add_message, #href_add_message{
+	margin-top:20px;
+}
+
+/*message*/
+
+.message_block{
+	border:1px solid gray; width:400px;
+	padding:5px;
+	
+}
+
+.mes_id{
+	color:rgb(60, 111, 234);
+	padding-right:3px;
+}
+
+.message_date{
+	color:gray;
+}
+
+.mes_text{
+	font-style: italic;
+	color:rgb(227, 152, 15);
+}
+
+button, input[type=submit]{
+	margin:2px;
+	background:white;
+	color:rgb(43, 123, 223);
+	border: 2px solid rgb(43, 123, 223);
+}
+
+button:hover, input[type=submit]:hover{
+	margin:2px;
+	background:rgb(43, 123, 223);
+	color:white;
+}
+
+/*comment_form*/
+.comment_form{
+	margin-top:5px;
+	border: 1px solid rgb(205, 203, 203);
+	width:400px;
+	height:70px;
+	background:rgb(245, 242, 242);
+}
+
+.comment_form .input_com input{
+	width:320px;}
+
+.input_com{
+	padding:20px;
+	text-align:center;
+}
+
+.button_confirm{
+	text-align:center;
+}
+
+/*add message form*/
+
+.block_messages{
+	width:400px;
+}
+
+#ad_f{
+	text-align:center;
+}
+
+.errorlist{
+	list-style-type: none;
+	color:red;
+	padding:0px;
+
+}

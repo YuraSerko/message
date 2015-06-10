@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="/media/js/jquery.js"></script>
+    <link href="/media/css/my_css.css" rel="stylesheet" type="text/css"/>
+    <script src = "/media/js/script.js"></script>
+	<title>Message tape</title>
+</head>
+
+<body>
+
+
+    
+    
+    <div class="block_header">
+	    {% block head_content %}
+	    <div class="head_content">
+	    	<span id='href_main'><a href="/" class="button_add_comment">Главная страница</a> </span>
+	    	<span id='href_add_message'><a href="/add_message/" class="button_add_comment">Добавить сообщение</a> </span>
+	    </div>
+	    {% endblock %}
+    </div>
+    
+   	<div class="block_messages">
+	{% block messages %}
+    {% endblock %}
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load space %}
+
+
+
+
+{% block messages %}
+
+
+{% for ms_obj in ms_objs %}
+
+	
+	<div  class = 'message_block' style="" >
+		<div class = "upper_block" >
+			<div class='message_date'> {{ ms_obj.date|date:"d M Y G:i"  }} </div>
+			<font class = 'mes_id' >{{ ms_obj.id }}</font><font class='mes_text'>{{ ms_obj.text }}</font> 
+			<button onclick = "Messages.show_single( {{ms_obj.id}} )">Ветка</button>
+		</div>
+		<div class = "button_block">
+			<button class="button_add_comment" onclick = 'Messages.show_comment_form(this, {{ms_obj.id}})'>Добавить комментарий</button><button onclick = "Messages.show_comments( this, {{ms_obj.id}} )">Показать комментарии</button>
+		</div>
+	  	</div>
+  	</div>
+  	<br>
+  	<br>
+  	
+{% endfor %}
+
+{% endblock %}

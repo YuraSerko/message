@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+
+{% block messages %}
+
+{% for f in form %}
+	<form action="" method="post" id="ad_f">{% csrf_token %}
+	{{ f.errors }}
+	{{ f }}
+	<div id = "form_submit_div">
+		<input type="submit" value="Добавить сообщение" />
+	</div>
+	
+	</form>
+{% endfor %}
+
+{% endblock %}
+
+
+
+
+

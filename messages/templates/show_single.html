@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load space_single %}
+
+
+{% block messages %}
+
+
+
+{% for mes_obj in mes_objs %}
+<div  class = 'message_block' style="margin-left:{% space_single mes_obj.level first_mes_level=first_mes_level %}px;" >
+		<div class = "upper_block" >
+			<div class='message_date'> {{ mes_obj.date|date:"d M Y G:i"  }} </div>
+			<font class = 'mes_id' >{{ mes_obj.id }}</font><font class='mes_text'>{{ mes_obj.text }}</font> 
+			<button onclick = "Messages.show_single( {{mes_obj.id}} )">Ветка</button>
+		</div>
+		<div class = "button_block">
+			<button onclick = 'Messages.show_comment_form(this, {{mes_obj.id}})'>Добавить комментарий</button>
+		</div>
+	  	</div>
+<br>
+{% endfor %}
+
+
+
+{% endblock %}
+
+
+
+
+
